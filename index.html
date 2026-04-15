@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilib Alma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="logo.png" class="logo">
+
+    <h1>Calculadora Ilib Alma</h1>
+    <!-- Formulário de Login -->
+    <div class="box" id="loginBox">
+        <input id="email" placeholder="Email">
+        <input id="senha" type="password" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+        <button onclick="cadastrar()">Criar conta</button>
+        <button onclick="resetSenha()">Esqueci senha</button>
+    </div>
+
+    <!-- Formulário do App -->
+    <div class="box" id="app" style="display:none;">
+        <h3>Calculadora</h3>
+        <input id="nome_paciente" placeholder="Nome do paciente">
+        <select id="sexo">
+            <option value="">Sexo</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+        <input id="idade" type="number" placeholder="Idade">
+        <input id="peso" type="number" placeholder="Peso (kg)">
+        <input id="altura" type="number" placeholder="Altura (cm)">
+        <input id="spo2" type="number" placeholder="SpO2 (%)">
+        <select id="comorbidades">
+            <option value="">Comorbidades</option>
+            <option value="nenhuma">Nenhuma</option>
+            <option value="cardio">Cardiopatia</option>
+            <option value="resp">Respiratória</option>
+        </select>
+        <select id="cor_pele">
+            <option value="">Cor da pele</option>
+            <option value="clara">Clara</option>
+            <option value="morena">Morena</option>
+            <option value="negra">Negra</option>
+        </select>
+        <select id="foco">
+            <option value="">Foco do tratamento</option>
+            <option value="anti_age">Anti-age</option>
+            <option value="antioxidante">Antioxidante</option>
+            <option value="anti_inflamatorio">Anti-inflamatório</option>
+            <option value="adaptativa">Adaptativa</option>
+            <option value="regulatoria">Regulatória</option>
+            <option value="metabolica">Metabólica</option>
+            <option value="sos">SOS Clínico</option>
+        </select>
+        <button id="btnCalcular">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+
+    <!-- Scripts do Firebase -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/12.12.0/firebase-auth.js"></script>
+
+    <!-- Seu script.js -->
+    <script type="module" src="scripts/script.js"></script>
+</body>
+</html>

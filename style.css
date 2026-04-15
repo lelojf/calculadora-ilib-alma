@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0b1f2a, #1f6f8b);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* LOGO */
+.logo {
+    width: 120px;
+    margin-top: 20px;
+}
+
+/* TÍTULO */
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* CARD */
+.box {
+    background: #ffffff;
+    padding: 25px;
+    width: 320px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #2ecc71, #27ae60);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* RESULTADO */
+#resultado {
+    margin-top: 15px;
+    background: #eafaf1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #2c3e50;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* TEXTO DO RESULTADO */
+#resultado strong {
+    color: #27ae60;
+}
